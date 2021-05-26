@@ -22,6 +22,8 @@ function setDisplay(media) {
         } else {
             document.getElementById(medias[i]).style.display="none";
         }
+    let vid = document.getElementById("killingbirdq");        
+    vid.pause();
     }
 }
 
