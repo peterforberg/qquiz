@@ -1,0 +1,127 @@
+/* general styling */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  button {
+    opacity: .5;
+    background-color: #756bb1;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  }
+  /* grid elements */
+  
+.next button {
+  background-color: #756bb1;
+}
+  .text h2 {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
+  .text h2 {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .text p {
+
+  }
+
+  .quiz button {
+      padding: 10px;
+  }
+  /* The grid container */
+  .grid-container1 {
+    display: grid;
+    grid-template-areas: 
+      'text'
+      'next';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+
+  /* The grid container */
+  .grid-container2 {
+    display: grid;
+    grid-template-areas: 
+      'text' 
+      'quiz' 
+      'next';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+
+  .grid-container3 {
+    display: grid;
+    grid-template-areas: 
+      'text' 
+      'displayquiz' 
+      'displaycontent'
+      'next';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+
+  .text {
+    grid-area: text;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+  
+.quiz {
+  display: grid;
+  grid-area: quiz;
+  grid-template-columns: auto auto auto;
+  margin-left: 25%;
+  margin-right: 25%
+}
+
+.displayquiz {
+  display: grid;
+  grid-area: displayquiz;
+  grid-template-columns: auto auto auto auto;
+  margin-left: 25%;
+  margin-right: 25%
+}
+
+.displaycontent {
+  display: grid;
+  grid-area: displaycontent;
+  grid-template-columns: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  justify-content: center;
+}
+  /* Style the footer */
+  .next {
+    grid-area: next;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container2 {
+      display: grid;
+      grid-template-areas: 
+        'text' 
+        'quiz' 
+        'next';
+    } 
+    .quiz {
+      display: grid;
+      grid-area: quiz;
+      grid-template-columns: auto auto;
+      margin-left: 25%;
+      margin-right: 25%
+  }
+  }
