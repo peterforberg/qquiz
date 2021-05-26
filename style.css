@@ -1,44 +1,50 @@
 /* general styling */
 
+#main {
+  margin: auto;
+}
+
 * {
     box-sizing: border-box;
   }
   
-  body {
+body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
   }
   
-  button {
+button {
     opacity: .5;
     background-color: #756bb1;
     color: white;
     padding: 10px;
     margin: 5px;
+    outline: none;
+    text-decoration: none;
+    border: none;
   }
   /* grid elements */
   
 .next button {
-  background-color: #756bb1;
+  opacity: 1;
 }
+
   .text h2 {
-    background-color: #f1f1f1;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     font-size: 35px;
   }
-  .text h2 {
-    background-color: #f1f1f1;
-    padding: 30px;
+  .text h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .text p {
-
+    font-family: 'Times New Roman', Times, serif;
   }
 
-  .quiz button {
-      padding: 10px;
+  .displaycontent p {
+    font-family: 'Times New Roman', Times, serif;
   }
   /* The grid container */
   .grid-container1 {
@@ -103,25 +109,74 @@
   /* Style the footer */
   .next {
     grid-area: next;
-    background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
   }
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
+    .grid-container1 {
+      display: grid;
+      grid-template-areas: 
+        'text'
+        'next';
+      /* grid-column-gap: 10px; - if you want gap between the columns */
+    } 
+  
+    /* The grid container */
     .grid-container2 {
       display: grid;
       grid-template-areas: 
         'text' 
         'quiz' 
         'next';
+      /* grid-column-gap: 10px; - if you want gap between the columns */
     } 
-    .quiz {
+  
+    .grid-container3 {
       display: grid;
-      grid-area: quiz;
-      grid-template-columns: auto auto;
-      margin-left: 25%;
-      margin-right: 25%
+      grid-template-areas: 
+        'text' 
+        'displayquiz' 
+        'displaycontent'
+        'next';
+      /* grid-column-gap: 10px; - if you want gap between the columns */
+    } 
+  
+    .text {
+      grid-area: text;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  
+    
+  .quiz {
+    display: grid;
+    grid-area: quiz;
+    grid-template-columns: auto auto;
+    margin-left: 5%;
+      margin-right: 5%;
+  }
+  
+  .displayquiz {
+    display: grid;
+    grid-area: displayquiz;
+    grid-template-columns: auto auto;
+    margin-left: 5%;
+      margin-right: 5%;
+  }
+  
+  .displaycontent {
+    display: grid;
+    grid-area: displaycontent;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  #killingbirdq {
+    width: 320px;
+    height: 240px;
   }
   }

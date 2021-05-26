@@ -6,6 +6,12 @@ function steps(){
     document.getElementById("step" + step).style.display="grid";
 }
 
+function backwards() {
+    document.getElementById("step" + step).style.display="none";
+    step--;
+    document.getElementById("step" + step).style.display="grid";
+}
+
 function buttonClick(clicked_button) {
     if (getComputedStyle(document.getElementById(clicked_button)).opacity == "0.5") {
          document.getElementById(clicked_button).style.opacity = "1";
@@ -14,14 +20,22 @@ function buttonClick(clicked_button) {
     }
 }
 
-function setDisplay(media) {
+function setDisplay(media,clicked_id) {
     var medias = ["fb", "twt", "chan", "yt"];
+    var mediasb = ["fbb", "twtb", "chanb", "ytb"];
     for (i in medias) {
         if (medias[i] == media) {
             document.getElementById(media).style.display="grid";
         } else {
             document.getElementById(medias[i]).style.display="none";
         }
+    for (i in mediasb) {
+        if (mediasb[i] == clicked_id) {
+            document.getElementById(clicked_id).style.opacity="1";
+        } else {
+            document.getElementById(mediasb[i]).style.opacity="0.5";
+        }
+    }
     let vid = document.getElementById("killingbirdq");        
     vid.pause();
     }
