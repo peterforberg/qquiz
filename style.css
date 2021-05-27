@@ -208,7 +208,7 @@ button {
   }
   .centered {
     font-size: 1rem;
-    transform: translate(-50%, -240%);
+    transform: translate(-50%, -250%);
     -webkit-text-stroke: 0px white;
   }
   }
