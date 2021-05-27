@@ -1,5 +1,32 @@
 /* general styling */
 
+a {
+  text-decoration: solid underline #756bb1 2.5px;
+  color: black;
+}
+
+.quote {
+  background-color: #766bb150;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-left: solid #756bb1;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  font-family: "Roboto Slab", serif;
+  color: black;
+  font-size: 2rem;
+  -webkit-text-stroke: 1px white;
+}
+
 #main {
   margin: auto;
 }
@@ -178,5 +205,10 @@ button {
   #killingbirdq {
     width: 320px;
     height: 240px;
+  }
+  .centered {
+    font-size: 1rem;
+    transform: translate(-50%, -240%);
+    -webkit-text-stroke: 0px white;
   }
   }

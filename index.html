@@ -12,8 +12,10 @@
     <div id="main">
         <div class="grid-container1" style="display:grid" id="step1">
             <div class="text">
-              <h2>The Making of a QAnon</h2>
-              <p>Conspiracy theories are endemic to American culture. Ranging from the (mostly) harmless theories about a faked moon landing or gay frogs to the unsettling stories about pizza parlor-based child trafficking, these conspiracy theories shape American public discourse and culture. Not all conspiracy theories are made equally: some are grounded in actual government programs intended to manipulate media or disrupt movements for racial justice, while others are as factual as the Earth is flat. They may be large, determining a person’s entire worldview or political ideology, and they may be small, casually believed as a simple, unspoken fact of the world.</p>
+              <img src="media\logo.png" alt="network of dots" width="100%">
+              <div class="centered"><h1>The Making <br>of a QAnon</h1></div>
+              <h3>Content Warning: Mentions of pedophilia, racism, sexual assault, anti-Semitism</h3>
+              <p>Conspiracy theories are endemic to American culture. Ranging from the (mostly) harmless theories about <a href="https://www.youtube.com/watch?v=zoqkmiRy3w8">a faked moon landing</a> or <a href="https://www.amazon.com/Obama-Turned-Frog-Chemicals-T-Shirt/dp/B07FQ9JRHK">gay frogs</a> to the unsettling stories about <a href="https://www.vox.com/policy-and-politics/2016/12/5/13842258/pizzagate-comet-ping-pong-fake-news">pizza parlor-based child trafficking</a>, these conspiracy theories shape American public discourse and culture. Not all conspiracy theories are made equally: some are grounded in actual government programs intended to <a href="https://www.thedailybeast.com/cheats/2016/10/14/how-the-cia-paid-and-threatened-journalists-to-do-its-work">manipulate media</a> or <a href="https://www.npr.org/templates/story/story.php?storyId=5161811">disrupt movements for racial justice,</a> while others are as factual as <a href="https://www.youtube.com/watch?v=JTfhYyTuT44">the Earth is flat</a>. They may be large, determining a person’s entire worldview or political ideology, and they may be small, casually believed as a simple, unspoken fact of the world.</p>
               <p>Still, at the heart of every conspiracy theory are conspiracy theorists, the people tirelessly working to make the “truth” known. This group of people are hard to characterize because they are just as diverse as the wide-ranging theories they imbibe. However—despite provocations to do otherwise—many people home in on the most outlandish of conspiracy theories and resort to describing their adherents in victimizing, pathologizing, unsympathetic terms. A prime example is the latest and largest American conspiracy theory, QAnon, which asserts that a Satanic, pedophilic cabal of political elites have taken over the government. In this theory, Q—an anonymous military operative—is distributing coded messages to assist former president Donald Trump in his overthrow of the cabal. Sounds…crazy, right?</p>
               <p>“Crazy” might sometimes be an accurate characterization of followers’ beliefs—and maybe even followers themselves—but more often than not, it’s an oversimplified understanding of both what supporters believe and why they believe it. In this brief, interactive version of my undergraduate thesis, we’ll look at how regular people come to believe in QAnon and end up promoting it to a wider audience, before quickly looking at the effects of these dearly held beliefs. So let’s jump in.</p>
             </div>  
@@ -21,11 +23,23 @@
             <button onclick="steps()" class="next">next</button>
             </div>
           </div>
-          <div class="grid-container2" style="display:none" id="step2">
+          <div class="grid-container1" style="display:none" id="step2">
+            <div class="text">
+              <h2>Hermeneutics of Online Conspiracy Theory</h2>
+              <p class="quote"><i>I believe the point about the whole Q movement is like, ‘This is the information; think for yourself.’ And then if somebody comes to a different conclusion, well then leave them alone.</i><br>—Eva, housewife</p>
+              <p>Over the summer of 2020, I collected data on the lives and works of QAnons, conducting a virtual ethnography, 30 interviews, and performing quantitative content analysis on over 300,000 tweets. I entered my research with two primary questions: (1) how do people come to believe in the political reality of QAnon, and (2) how do people, once involved, assist in the creation of this political reality? In answering thess questions, I developed a hermeneutics of online conspiracy that tracks followers' involvement in QAnon. This hermeneutics describes the processes through which conspiracy theorists generate meaningful political realities grounded in personal experience. In short, followers first <i style="color:#756bb1">adopt</i> constructed conspiratorial identities on the basis of personal grievances, then they work to <i style="color:#756bb1">promote</i> their beliefs by way of participation in QAnon's massive online presence, doing the interpersonal work to <i style="color:#756bb1">ideologize</i> QAnon, turning it into a set of beliefs and practices that structure and inform their engagement wth politics through the lens of a personal narrative.</p>
+              <p>I made a “crazy” graphic describing this framework that my preceptor would probably rather I didn't include, but this is my presentation, and here it is:</p>
+              <img src="media/framework.png" alt="" width="100%">
+            </div>
+            <div class="next">
+              <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
+              </div>
+            </div>
+          <div class="grid-container2" style="display:none" id="step3">
             <div class="text">
               <h2>Adoption</h2>
-              <h3>Content Warning: Mentions of pedophilia, racism, sexual assault, anti-Semitism</h3>
-              <p>At the core of conspiracy belief is identity. Identity, taken as a constellation of biographical traits and experiences, is the medium through which conspiratorial beliefs can be adopted, as identity itself is reconstructed by conspiracy theories. This isn’t to suggest that, for example, all rural White people or undereducated people are more likely to believe in conspiracy theories, but that these traits can be leveraged by conspiracy promoters to turn someone’s identity into the basis for conspiratorial thinking. "Whiteness" or "motherhood" themselves become conspiratorial. So, let’s make a QAnon. Select some biographical traits—perhaps ones that correspond to your own background—and we’ll see the kinds of messages conspiracy promoters might send you.</p>
+              <p class="quote"><i>...it comes down to lived experience too, because we're going to be able to give you the best statistics because we lived it, right?</i><br>—Samantha, mother, formerly in foster care</p>
+              <p>At the core of conspiracy belief is identity. Identity, taken as a constellation of biographical traits and experiences, is the medium through which conspiratorial beliefs can be adopted, as identity itself is reconstructed by conspiracy theories. This isn’t to suggest that, for example, all rural White people or undereducated people are more likely to believe in conspiracy theories, but that these traits can be leveraged by conspiracy promoters to turn someone’s identity into the basis for conspiratorial thinking. “Whiteness” or “motherhood” themselves become conspiratorial. So, let’s make a QAnon. Select some biographical traits—perhaps ones that correspond to your own background—and we’ll see the kinds of messages conspiracy promoters might send you.</p>
             </div>
             <div class="quiz">
               <button id="0" onclick="buttonClick(this.id)">parent</button>
@@ -42,7 +56,7 @@
               <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
               </div>
             </div>
-            <div class="grid-container2" style="display:none;" id="step3">
+            <div class="grid-container2" style="display:none;" id="step4">
             <div class="text">
               <h2>Adoption</h2>
               <p>Now select some experiences you (or the fake conspiracy theorist you’re constructing) might’ve had.</p>
@@ -63,10 +77,11 @@
                 </div>
               </div>
           </div>
-          <div class="grid-container1" style="display:none" id="step4">
+          <div class="grid-container1" style="display:none" id="step5">
             <div class="text">
               <h2>Adoption</h2>
-              <p>QAnon leverages identity to draw people into a conspiracy theory that reifies their understanding of the world's harms: it gives them an opportunity to have control over systems that caused them (real or perceived) harm. In a paradox of power, they're reminded of the world's injustices, but they're also given a way out. As one informant put it, "Q makes me feel like I am in the Oval Office with the president." Now, imagine this message appearing to you. Perhaps it comes in the form of a TikTok video realeased by an earnest mother. Or maybe it's from a long YouTube documentary, introducing you to the conspiratorial world.</p>
+              <p>QAnon leverages identity to draw people into a conspiracy theory that reifies their understanding of the world's harms: it gives them an opportunity to have control over systems that caused them (real or perceived) harm. In a paradox of power, they're reminded of the world's injustices, but they're also given a way out. As one informant put it, “Q makes me feel like I am in the Oval Office with the president.”</p> 
+              <p>Now, imagine this message appearing to you. Imagine, when you hear it, it's as if it's been <i>made for you.</i> Perhaps it comes in the form of a TikTok video realeased by an earnest mother. Or maybe it's from a long YouTube documentary, introducing you to the conspiratorial world.</p>
               <i><p id="generatedText"></p></i>
               <p>But how does this message reach you?</p>
             </div>
@@ -74,9 +89,10 @@
             <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
             </div>
           </div>
-          <div class="grid-container3" style="display:none" id="step5">
+          <div class="grid-container3" style="display:none" id="step6">
             <div class="text">
               <h2>Promotion</h2>
+              <p class="quote"><i>I decided I'm just going to start my own little YouTube channel and start putting things out that are important to me. And I figured if people listen, they listen, if they don't, they don't. And so like this I've only started up maybe January. And I already have 65, almost 64,000 followers.</i><br>—Deborah, retiree and healthcare skeptic</p>
               <p>Through promotional processes that leverage the affordances of different social media platforms, QAnons have created a robust system of publicization that allows them to subvert the power of epistemic authorities. A largely acephalous movement, actors compete for control of the narrative space, pushing QAnon to wider audiences.</p>
               <p>Click on any of the social media below to see examples of content from them.</p>
             </div>
@@ -111,27 +127,32 @@
             <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
             </div>
           </div>
-          <div class="grid-container1" style="display:none" id="step6">
+          <div class="grid-container1" style="display:none" id="step7">
             <div class="text">
               <h2>Promotion</h2>
-              <p>The network of conspiratorial promoters is roughly visualized below, showing how platforms and algorithms interact to move content across the web.</p>
+              <p>The network of conspiratorial promoters is roughly visualized below, showing how platforms and algorithms interact to move content across the web. Within each (and thus across each) node in this network are practices, communities, and beliefs that spread and interact, diverse and infleuntial.</p>
               <img src="media/internet_graph.png" alt="" width="100%">
             </div>
             <div class="next">
             <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
             </div>
           </div>
-          <div class="grid-container1" style="display:none" id="step7">
+          <div class="grid-container1" style="display:none" id="step8">
             <div class="text">
               <h2>Ideologization</h2>
               <p>As a result of this sprawling, acephalous network that puts different followers into shared yet fractal internet spaces, QAnon lacks the ideological coherence of a political party, firmly beliving in Q as a symbol of political unity but infrequently agreeing on how they would ever mobilize their beliefs. That large network of online spaces is the totality of QAnon's network, but each person expriences the network differently. Some are never exposed to the violent anti-Semitism of 8chan, while others don't even realize how politically conservative the movement is, instead vieiwng it solely as anti-establishment. This has allowed outside actors to manipulate QAnon, using it to their advantage, and this has made QAnon's increased parity with conservative beliefs (such as those espoused by Tucker Carlson) a genuine threat to traditional Republican groups, as QAnon's online masses become easy fodder for pundits to exploit and take in.</p>
+              <p class="quote"><i>The last thing you want to do is discuss the resurrection of JFK Jr when it's already been discussed and dismissed. In fact, if you're confused. Just ask.</i><br>
+              —James, British 4chan user<br><br>
+              <i>They weren't gonna let him die. They were going to do everything they could to make sure that JFK Jr did not suffer the same fate as his father....And it would only make sense that he was Q. That JFK Jr is actually Q.</i><br>
+              —Patrick, software salesmen
+              </p>
             </div>
             
             <div class="next">
             <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
             </div>
           </div>
-          <div class="grid-container1" style="display:none" id="step8">
+          <div class="grid-container1" style="display:none" id="step9">
             <div class="text">
               <h2>Conclusion</h2>
               <p>Regardless of where QAnon goes from here, its beliefs have already been absorbed into mainstream conservativism. More importantly, what underlies these beliefs—fear, paranoia, frustration—will remain key affectual resources in politics. The strategies deployed by QAnon to indoctrinate and promote their ideas will likely shift with new technology, but there is a trajectory to online conspiracy and meaning-making that begins long before the internet and that will persist after all the Twitter acounts and YouTube pages have been taken down.</p>
