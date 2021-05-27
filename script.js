@@ -83,7 +83,7 @@ var sentences = [
     "But maybe there is a solution: there is Q. Q is working to take down the elites who have created this dystopia, the ones who steal away children and spend all of our wealth. ", //10 all
     "The politicians who are trying to usher in a New World Order in their socialist image are about to be taken down. ", //11
     "The politicians who are in the pocket of big corporations and ushering in fascism are about to be taken down. ", //12
-    "The politicians who have never cared about your or your life are about to be taken down. ", //13
+    "The politicians who have never cared about you or your life are about to be taken down. ", //13
     "It’s time to get back on the battlefield, be a part of the digital army that can save the world. ", //14
     "Join the Great Awakening, and with the Lord by your side there will be a spiritual revolution unlike anything this country has seen before. ", //15
     "Let your mind open to new possibilities, new futures, and new dimensions. It's your destiny. ", //16
