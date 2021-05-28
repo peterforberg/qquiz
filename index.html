@@ -20,7 +20,7 @@
               <p>“Crazy” might sometimes be an accurate characterization of followers’ beliefs—and maybe even followers themselves—but more often than not, it’s an oversimplified understanding of both what supporters believe and why they believe it. In this brief, interactive version of my undergraduate thesis, we’ll look at how regular people come to believe in QAnon and end up promoting it to a wider audience, before quickly looking at the effects of these dearly held beliefs. So let’s jump in.</p>
             </div>  
             <div class="next">
-            <button onclick="steps()" class="next">next</button>
+            <a href="#step2"><button onclick="steps()" class="next">next</button></a>
             </div>
           </div>
           <div class="grid-container1" style="display:none" id="step2">
@@ -33,7 +33,8 @@
               <p>If that's a lot to take in, don't worry. We'll walk through the processes of adoption, promotion, and ideologization in the sections to follow.</p>
             </div>
             <div class="next">
-              <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
+              <p><a href="#step1"><button onclick="backwards()">back</button></a>
+                <a href="#step3"><button onclick="steps()" class="next">next</button></a></p>
               </div>
             </div>
           <div class="grid-container2" style="display:none" id="step3">
@@ -54,7 +55,8 @@
               <button id="13" onclick="buttonClick(this.id);apoliticalButton(this.id)">apolitical</button>
             </div>
             <div class="next">
-              <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
+              <p><a href="#step2"><button onclick="backwards()">back</button></a>
+                <a href="#step4"><button onclick="steps()" class="next">next</button></a></p>
               </div>
             </div>
             <div class="grid-container2" style="display:none;" id="step4">
@@ -74,7 +76,8 @@
                 <button id="17" onclick="buttonClick(this.id)">felt powerless and ignored in society</button>
               </div>
               <div class="next">
-                <p><button onclick="backwards()">back</button><button onclick="generateText();steps()" class="next">next</button></p>
+                <p><a href="#step3"><button onclick="backwards()">back</button></a>
+                  <a href="#step5"><button onclick="generateText();steps()" class="next">next</button></a></p>
                 </div>
               </div>
           </div>
@@ -87,7 +90,8 @@
               <p>But how does this message reach you?</p>
             </div>
             <div class="next">
-            <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
+            <p><a href="#step4"><button onclick="backwards()">back</button></a>
+              <a href="#step6"><button onclick="steps()" class="next">next</button></a></p>
             </div>
           </div>
           <div class="grid-container3" style="display:none" id="step6">
@@ -125,7 +129,8 @@
               </div>
             </div>
             <div class="next">
-            <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
+            <p><a href="#step5"><button onclick="backwards()">back</button></a>
+              <a href="#step7"><button onclick="steps()" class="next">next</button></a></p>
             </div>
           </div>
           <div class="grid-container1" style="display:none" id="step7">
@@ -135,7 +140,8 @@
               <img src="media/internet_graph.png" alt="" width="100%">
             </div>
             <div class="next">
-            <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
+            <p><a href="#step6"><button onclick="backwards()">back</button></a>
+              <a href="#step8"><button onclick="steps()" class="next">next</button></a></p>
             </div>
           </div>
           <div class="grid-container1" style="display:none" id="step8">
@@ -150,7 +156,8 @@
             </div>
             
             <div class="next">
-            <p><button onclick="backwards()">back</button><button onclick="steps()" class="next">next</button></p>
+            <p><a href="#step7"><button onclick="backwards()">back</button></a>
+              <a href="#step9"><button onclick="steps()" class="next">next</button></a></p>
             </div>
           </div>
           <div class="grid-container1" style="display:none" id="step9">
@@ -158,8 +165,9 @@
               <h2>Conclusion</h2>
               <p>Regardless of where QAnon goes from here, its beliefs have already been absorbed into mainstream conservativism. More importantly, what underlies these beliefs—fear, paranoia, frustration—will remain key affectual resources in politics. The strategies deployed by QAnon to indoctrinate and promote their ideas will likely shift with new technology, but there is a trajectory to online conspiracy and meaning-making that begins long before the internet and that will persist after all the Twitter acounts and YouTube pages have been taken down.</p>
               <p>I'd like to thank my faculty advisor Professor Kristen Schilt and my preceptor Nicolás Torres-Echeverry for their incredible support throughout this project.</p>
+              <p>This website was made in a day! If you notice any bugs or have any suggestions, email me at peterforberg@uchicago.edu. If you want to see more of my work, check out my <a href="https://peterforberg.com">website</a>. And if you want to talk about my research...well I already gave you my email.</p>
             </div>
-            <div class="next"><p><button onclick="backwards()">back</button></p></div>
+            <div class="next"><p><a href="#step8"><button onclick="backwards()">back</button></a></p></div>
             </div>
           </div>
     </div>
