@@ -15,7 +15,10 @@ a {
   margin-right: 50px;
   border-left: solid #756bb1;
 }
-
+.footnote {
+  color:rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+}
 .centered {
   position: absolute;
   top: 50%;
